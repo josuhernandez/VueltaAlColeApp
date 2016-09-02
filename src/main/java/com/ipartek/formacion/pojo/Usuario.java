@@ -2,14 +2,13 @@ package com.ipartek.formacion.pojo;
 
 public class Usuario {
 
-	//propiedades
+	// propiedades
 	private long id;
 	private String nombre;
 	private String password;
 	private String email;
-	
-	
-	//Constructor por defecto
+
+	// Constructor por defecto
 	public Usuario() {
 		super();
 		this.id = -1;
@@ -18,55 +17,46 @@ public class Usuario {
 		this.email = "";
 	}
 
-
-	//Getters and Setters 
+	// Getters and Setters
 	public long getId() {
-		return id;
-	}
 
+		return this.id;
+
+	}
 
 	public void setId(long id) {
 		this.id = id;
 	}
 
-
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
-
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-
 	public String getPassword() {
-		return password;
+		return this.password;
 	}
-
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
-
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
-
-	//Funciones o Metodos
-	@Override
+	// Funciones o Metodos
+	@Override()
 	public String toString() {
-		return "Usuario [id=" + id + ", nombre=" + nombre + ", password=" + password + ", email=" + email + "]";
+		return "Usuario [id=" + this.id + ", nombre=" + this.nombre + ", password=" + this.password + ", email="
+				+ this.email + "]";
 	}
-	
-	
-	
-	
+
 }
